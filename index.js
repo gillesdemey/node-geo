@@ -1,5 +1,5 @@
 var request = require('request'),
-    _       = require('underscore');
+    _       = require('lodash-node');
 
 function makeRequest(url, options, callback) {
 
