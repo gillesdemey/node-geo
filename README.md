@@ -6,7 +6,7 @@ Google Maps Geo Lookup for Node.js
 
 
 ```javascript
-var geocoder = require('google-geo');
+var geocoder = require('node-geo');
 
 // Geocoding
 geocoder.geocode("Atlanta, GA", function ( err, data ) {

@@ -1,11 +1,11 @@
 {
-  "name": "geocoder",
+  "name": "node-geo",
   "description": "node wrapper around google's geocoder api",
   "version": "0.1.0",
   "main": "./index.js",
   "author": "Gilles De Mey <gilles.de.mey@gmail.com>",
-  "repository": "git://github.com/gillesdemey/geocoder",
-  "homepage": "https://github.com/gillesdemey/geocoder",
+  "repository": "git://github.com/gillesdemey/node-geo",
+  "homepage": "https://github.com/gillesdemey/node-geo",
   "keywords": [
     "google",
     "geocode",
