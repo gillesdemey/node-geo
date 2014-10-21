@@ -4,7 +4,7 @@ var request = require('request'),
 function makeRequest(url, options, callback) {
 
   if (options.hasOwnProperty('key'))
-    url.replace('http://', 'https://'); // api_key requests require SSL
+    url = url.replace('http://', 'https://'); // api_key requests require SSL
 
   request({
     uri : url,
