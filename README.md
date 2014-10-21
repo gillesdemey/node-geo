@@ -1,6 +1,9 @@
 Google Maps Geo Lookup for Node.js
 ===============
 
+## Install
+
+`npm install --save node-geo`
 
 ## Usage
 
