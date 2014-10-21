@@ -7,6 +7,7 @@ function makeRequest(url, options, callback) {
     url = url.replace('http://', 'https://'); // api_key requests require SSL
 
   request({
+    json: true,
     uri : url,
     qs  : options
   }, function(err, resp, body) {
@@ -14,7 +15,7 @@ function makeRequest(url, options, callback) {
     if (err)
       callback(err);
     else
-      callback(null, body);
+      return callback(null, body);
   });
 
 }
@@ -35,7 +36,7 @@ exports.geocode = function (query, options, callback) {
     if (err)
       callback(err)
     else
-      callback(null, resp);
+      return callback(null, resp);
   });
 
 };
@@ -56,7 +57,7 @@ exports.reverseGeocode = function (lat, lng, options, callback) {
     if (err)
       callback(err)
     else
-      callback(null, resp);
+      return callback(null, resp);
   });
 
 };
